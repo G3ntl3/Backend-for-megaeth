@@ -15,8 +15,8 @@ const contentRoutes = require("./routes/content.route");
 
 
 // Routes
-app.use("/api/auth", authRoutes);
-app.use("/api/content", contentRoutes);
+app.use(("/auth"), authRoutes);
+app.use("/", contentRoutes);
 
 
 // DB Connection + Server
