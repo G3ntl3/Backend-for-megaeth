@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { verifyFirebaseToken } = require("../controllers/auth.controllers");
-
-router.post("/firebase", verifyFirebaseToken); // POST /api/auth/firebase
+// POST /api/auth/firebase
+router.post("/firebase", verifyFirebaseToken); 
 
 module.exports = router;
