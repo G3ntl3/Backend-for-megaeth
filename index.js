@@ -18,6 +18,7 @@ const contentRoutes = require("./routes/content.route");
 app.use("/api/auth", authRoutes);
 app.use("/api/content", contentRoutes);
 
+
 // DB Connection + Server
 mongoose
   .connect(process.env.MONGODB_URI)
