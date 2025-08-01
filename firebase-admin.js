@@ -1,5 +1,6 @@
 const admin = require("firebase-admin");
-const serviceAccount = require("./firebase/megaethweb3-firebase-adminsdk-fbsvc-3972e6a7dc.json");
+
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
 if (!admin.apps.length) {
   admin.initializeApp({
